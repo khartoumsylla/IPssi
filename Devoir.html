@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devoir</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Exercice 1 : Générateur de mot de passe complexe</h1>
+    <label for="length">Longueur du mot de passe :</label>
+    <input type="number" id="length" min="8" max="32" value="12">
+    <br><br>
+    <input type="checkbox" id="includeNumbers" checked>
+    <label for="includeNumbers">Inclure des chiffres (0-9)</label>
+    <br>
+    <input type="checkbox" id="includeUppercase">
+    <label for="includeUppercase">Inclure des lettres majuscules (A-Z)</label>
+    <br>
+    <input type="checkbox" id="includeLowercase" checked>
+    <label for="includeLowercase">Inclure des lettres minuscules (a-z)</label>
+    <br>
+    <input type="checkbox" id="includeSpecial">
+    <label for="includeSpecial">Inclure des caractères spéciaux (!@#$%^&*()_+)</label>
+    <br><br>
+    <button onclick="generatePassword()">Générer le mot de passe</button>
+    <br><br>
+    <input type="text" id="password" readonly>    
+    <hr>
+
+    <h1>Exercice 2 : Convertisseur Celsius / Fahrenheit</h1>
+    <input type="number" id="temperature" placeholder="Température" />
+    <select id="unite">
+      <option value="celsius">Degrés Celsius</option>
+      <option value="fahrenheit">Degrés Fahrenheit</option>
+    </select>
+    <button onclick="convertirTemperature()">Convertir</button>
+    <div id="resultat"></div>
+    
+
+    <hr>
+
+    <h1>Exercice 3 : Générateur de citations</h1>
+    <button id="generate-btn">Générer une citation</button>
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<button id="close-btn">X</button>
+			<p id="quote"></p>
+		</div>
+	</div>
+
+    <hr>
+
+    <h1>Exercice 4 : Dark Mode</h1>
+	<p>Cliquez sur le bouton pour activer/désactiver le mode sombre :</p>
+	<button onclick="toggleDarkMode()">Mode sombre</button>
+
+    <hr>
+
+    <h1>Exercice 5 : Menu burger</h1>
+    <nav>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
